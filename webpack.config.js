@@ -1,58 +1,63 @@
-const CleanWebpackPlugin = require("clean-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const path = require("path");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: "./src/app.js",
-  watch: true,
-  watchOptions: {
-    ignored: /node_modules/,
+  entry: {
+    app: path.resolve(__dirname, "./web/js/app.js"),
+    style: path.resolve(__dirname, "./scss/style.scss"),
   },
-  plugins: [
-    // new CleanWebpackPlugin(["dist"]),
-    new HtmlWebPackPlugin({
-      template: "./authorization.html",
-    }),
-    new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css",
-    }),
-  ],
+  output: {
+    filename: "[name].js",
+    path: path.resolve(__dirname, "./web/bundle"),
+  },
   module: {
     rules: [
       {
+        test: /\.js$/,
+        exclude: [/node_modules/],
+        use: [
+          {
+            loader: "babel-loader",
+            options: { presets: ["latest"] },
+          },
+        ],
+      },
+      {
         test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        use: ExtractTextPlugin.extract({
+          use: [
+            {
+              loader: "css-loader",
+              options: {},
+            },
+            {
+              loader: "sass-loader",
+              options: {},
+            },
+          ],
+          fallback: "style-loader",
+        }),
       },
       {
-        test: /\.m?js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env"],
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "fonts/",
+            },
           },
-        },
-      },
-      {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: {
-          loader: "file-loader",
-          options: {
-            outputPath: "images",
-            name: "[name].[ext]",
-          },
-        },
-      },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: ["file-loader"],
-      },
-      {
-        test: /\.html$/,
-        use: ["html-loader"],
+        ],
       },
     ],
   },
+  plugins: [
+    new ExtractTextPlugin({
+      filename: "[name].css",
+      allChunks: true,
+    }),
+  ],
+  devtool: "source-map",
 };

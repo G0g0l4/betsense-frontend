@@ -1,0 +1,23 @@
+.button {
+  border-radius: 5px;
+  height: 38px;
+  width: 141px;
+  color: #fff;
+  font-family: "Encode-Sans";
+  font-size: 15px;
+  letter-spacing: -0.06px;
+  line-height: 22px;
+
+  &:hover {
+    color: #fff;
+  }
+}
+.green-btn {
+  background-color: $green;
+}
+.blue-btn {
+  background-color: $blue;
+}
+.red-btn {
+  background-color: $red;
+}

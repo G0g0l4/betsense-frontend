@@ -1,10 +1,9 @@
 {
   "name": "frontend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx webpack --progress",
+    "watch": "npx webpack --progress --watch",
+    "serve": "webpack-dev-server"
   },
   "author": "Levan Gogoladze",
   "license": "ISC",
@@ -12,12 +11,10 @@
     "@babel/core": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
     "babel-loader": "^8.1.0",
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^4.2.0",
+    "babel-preset-latest": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^6.0.0",
-    "html-loader": "^1.1.0",
-    "html-webpack-plugin": "^4.3.0",
-    "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.14.1",
     "sass-loader": "^9.0.2",
     "style-loader": "^1.2.1",
@@ -25,10 +22,12 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
     "bootstrap": "^4.5.0",
     "fibers": "^5.0.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
-    "sass": "^1.26.10"
+    "sass": "^1.26.10",
+    "webpack-dev-server": "^3.11.0"
   }
 }
