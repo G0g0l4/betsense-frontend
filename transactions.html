@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="web/bundle/style.css">
     <link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <title>Sidebar</title>
+    <title>Transactions</title>
 </head>
 
 <body>
@@ -83,16 +83,40 @@
             </div>
         </div>
 
-        <div class="container-fluid bady">
+        <div class="container-fluid transactions-bady">
+            <h1>Transactions</h1>
+
+            <div class="inputs-wrapper">
+                <div class="inputs">
+                    <div class="search-wrapper">
+                        <form>
+                            <input class="form-control" type="number">
+                            <button type="submit" class="btn button blue-btn">Search</button>
+                        </form>
+                    </div>
+                    <div class="filter-wrapepr">
+                        <div class="start">
+                            <!-- <input class="form-control" type="date"> -->
+                            <div class="md-form md-outline" inline="true">
+                                <input placeholder="Select date" type="text" id="example"
+                                    class="form-control datepicker">
+                            </div>
+                            <input class="form-control">
+                        </div>
+                        <div class="finish">
+                            <input class="form-control" type="date">
+                            <input class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-wrapper">
+                
 
 
-
-            
+            </div>
         </div>
     </div>
-
-
-
 
     <script src="web/bundle/app.js"></script>
 </body>

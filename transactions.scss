@@ -1,0 +1,30 @@
+.transactions-bady {
+  background-color: #f8f8f8;
+  padding: 0px 50px;
+
+  .inputs-wrapper {
+    background-color: #eaeff3;
+
+    .inputs {
+      margin: 0 auto;
+      max-width: 640px;
+
+      .search-wrapper {
+          margin-bottom: 35px;
+
+        form {
+          display: flex;
+
+          button {
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .filter-wrapepr {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
