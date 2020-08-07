@@ -14443,11 +14443,8 @@ function shrinkNavItem() {
 }
 
 $(".dropdwon-nav-item").click(function () {
-  $('.dp').toggleClass("show-dropdown");
-  $('i').toggleClass("rotated");
-});
-$('.datepicker').datepicker({
-  inline: true
+  $(".dp").toggleClass("show-dropdown");
+  $("i").toggleClass("rotated");
 });
 
 /***/ })

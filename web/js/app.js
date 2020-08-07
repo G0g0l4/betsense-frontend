@@ -2,7 +2,6 @@ import jQuery from "jquery";
 window.$ = window.jQuery = jQuery;
 import "../../node_modules/bootstrap/js/dist/dropdown";
 
-
 $(".hamburger-btn").click(function () {
   if ($(this).hasClass("clicked")) {
     $(this).removeClass("clicked");
@@ -43,13 +42,7 @@ function shrinkNavItem() {
   });
 }
 
-
 $(".dropdwon-nav-item").click(function () {
-    $('.dp').toggleClass("show-dropdown");
-    $('i').toggleClass("rotated");
-});
-
-
-$('.datepicker').datepicker({
-  inline: true
+  $(".dp").toggleClass("show-dropdown");
+  $("i").toggleClass("rotated");
 });
