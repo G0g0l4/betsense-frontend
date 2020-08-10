@@ -1,23 +1,34 @@
 import jQuery from "jquery";
 window.$ = window.jQuery = jQuery;
-import "../../node_modules/bootstrap/js/dist/dropdown";
 
 $(".hamburger-btn").click(function () {
   if ($(this).hasClass("clicked")) {
-    $(this).removeClass("clicked");
-    $(".sidebar").css("width", "80px");
-    $(".main").css("padding-left", "80px");
-    $(".bottom").removeClass("collapsedBottom");
+    closeSidebar();
     shrinkNavItem();
   } else {
     $(this).addClass("clicked");
-    $(".sidebar").css("width", "265px");
-    $(".main").css("padding-left", "265px");
+    $(".sidebar").addClass("opened");
+    $(".main").addClass("sidebar-opened");
     $(".bottom").addClass("collapsedBottom");
+    $("body").addClass("hide-overflow");
     expnadNavItem();
   }
   showHideElements();
 });
+
+$(".close-sidebar-btn").click(function () {
+  closeSidebar();
+  showHideElements();
+  shrinkNavItem();
+});
+
+function closeSidebar() {
+  $(".hamburger-btn").removeClass("clicked");
+  $(".sidebar").removeClass("opened");
+  $(".main").removeClass("sidebar-opened ");
+  $(".bottom").removeClass("collapsedBottom");
+  $("body").removeClass("hide-overflow");
+}
 
 function showHideElements() {
   let hiddenElements = $(".hide");

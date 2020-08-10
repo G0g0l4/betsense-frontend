@@ -1,0 +1,104 @@
+.create-player-bady {
+    .inputs-wrapper {
+        background-color: #eaeff3;
+        padding: 40px 35px;
+        margin-bottom: 25px;
+
+        .first-row,
+        .second-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .inputs-iner-wrapper {
+                display: flex;
+                .button {
+                    height: 43px;
+                }
+                select {
+                    height: 43px;
+                }
+                @include media-breakpoint-down(lg) {
+                    & {
+                        flex-direction: column;
+
+                        .button {
+                            width: 225px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .second-row {
+            .inputs-iner-wrapper {
+                label {
+                    display: none;
+
+                    @include media-breakpoint-down(lg) {
+                        & {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .first-row {
+            margin-bottom: 20px;
+        }
+        .small {
+            width: 120px;
+        }
+        .middle {
+            width: 225px;
+        }
+        .big {
+            width: 380px;
+        }
+
+        .small,
+        .middle,
+        .big {
+            @include media-breakpoint-down(lg) {
+                & {
+                    width: 225px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    h4 {
+        color: #061836;
+        font-family: "Encode-Sans";
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: -0.36px;
+        line-height: 41px;
+        padding-left: 20px;
+    }
+    .table-wrapper {
+        max-height: 510px;
+        overflow-y: auto;
+        border: 1px solid #dbdbdb;
+        background-color: #ffffff;
+        padding: 10px 10px;
+    }
+    .pagination {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        a {
+            color: #535353;
+            font-family: "Encode-Sans";
+            font-size: 13px;
+            letter-spacing: 0.33px;
+            line-height: 28px;
+            border-radius: 50%;
+            padding: 0px 6px;
+            border: 1px solid #dbdbdb;
+
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    }
+}

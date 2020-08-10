@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="web/bundle/style.css">
     <link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <title>Sidebar</title>
+    <title>Adding User</title>
 </head>
 
 <body>
@@ -55,7 +55,7 @@
                 </div>
             </div>
             <a class="nav-item" href="#"><img src="./web/img/+7.png"> <span class="hide">Add game</span> </a>
-            <a class="nav-item" href="#"> <img src="./web/img/user.png">
+            <a class="nav-item" href="/add-user.html"> <img src="./web/img/user.png">
                 <spna class="hide">Add user</spna>
             </a>
         </div>
@@ -70,8 +70,6 @@
     </div>
 
     <div class="main">
-
-
         <div class="container-fluid header-wrapper">
             <div class="header">
                 <button class="hamburger-btn">
@@ -88,17 +86,45 @@
             </div>
         </div>
 
-        <div class="container-fluid body">
+        <div class="container-fluid add-user-body body">
+            <h3>Adding User</h3>
 
-
-
-            
+            <div class="add-user-inputs-wrapper">
+                <div class="inputs-wrapper">
+                    <div class="first-line line">
+                        <div class="input-wrapper">
+                            <label for="name">Set User Name</label>
+                            <input class="form-control input" id="name" type="text">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="email">Enter the user e-mail for getting codes</label>
+                            <input class="form-control input" id="email" type="email">
+                        </div>
+                    </div>
+                    <div class="second-line line">
+                        <div class="input-wrapper">
+                            <label for="password">Set passward</label>
+                            <input class="form-control input" id="password" type="password">
+                        </div>
+                        <div class="wrapper">
+                            <label class="checkbox-wrapper">
+                                <span class="checbox-label">Deposit feature</span>
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox-wrapper">
+                                <sapn class="checbox-label">Blocking function</sapn>
+                                <input class="checkbox" type="checkbox" id="second">
+                                <span class="checkmark"></span>
+                            </label>
+                            <button class="btn blue-btn button">Add User</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-
-
-
+    </div>
     <script src="web/bundle/app.js"></script>
 </body>
 

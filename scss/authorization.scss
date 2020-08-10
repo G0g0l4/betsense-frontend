@@ -51,40 +51,7 @@
       }
 
       input {
-        height: 43px;
         margin-bottom: 28px;
-        border-radius: 4px;
-        border: 1px solid #aec8de;
-        padding-left: 20px;
-
-        &::-webkit-input-placeholder {
-          color: $gray;
-          font-family: "Encode-Sans";
-          font-size: 13px;
-          letter-spacing: 0.08px;
-          line-height: 23px;
-        }
-        &::-moz-placeholder {
-          color: $gray;
-          font-family: "Encode-Sans";
-          font-size: 13px;
-          letter-spacing: 0.08px;
-          line-height: 23px;
-        }
-        &:-ms-input-placeholder {
-          color:$gray;
-          font-family: "Encode-Sans";
-          font-size: 13px;
-          letter-spacing: 0.08px;
-          line-height: 23px;
-        }
-        &:-moz-placeholder {
-          color: $gray;
-          font-family: "Encode-Sans";
-          font-size: 13px;
-          letter-spacing: 0.08px;
-          line-height: 23px;
-        }
       }
       .input-with-icon {
         width: 100%;

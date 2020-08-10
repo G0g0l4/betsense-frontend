@@ -3,7 +3,10 @@
 
 @import "variables";
 @import "global";
+@import "table";
+@import "sidebar";
 
-@import "../authorization.scss";
-@import "../sidebar.scss";
-@import "../transactions.scss";
+@import "authorization.scss";
+@import "transactions.scss";
+@import "add-user.scss";
+@import "createPlayer.scss";

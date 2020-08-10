@@ -1,0 +1,130 @@
+.transactions-bady {
+  background-color: #f8f8f8;
+
+  .inputs-wrapper {
+    background-color: #eaeff3;
+    padding-top: 17px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+
+    .inputs {
+      margin: 0 auto;
+      max-width: 640px;
+
+      .search-wrapper {
+        margin-bottom: 10px;
+      }
+      .input-wrapper {
+        display: flex;
+
+        button {
+          margin-left: 10px;
+          height: 43px;
+        }
+      }
+
+      label {
+        padding-left: 20px;
+        font-family: "Encode-Sans-Bold";
+        font-size: 12px;
+        letter-spacing: 0.19px;
+        line-height: 23px;
+        color: #3a3939;
+
+        .red {
+          color: $red;
+        }
+        .blue {
+          color: #3498f1;
+        }
+      }
+
+      .filter-wrapepr {
+        display: flex;
+        justify-content: space-between;
+
+        .start,
+        .finish {
+          position: relative;
+        }
+
+        .date-picker {
+          max-width: 175px;
+          margin-right: 10px;
+        }
+        .date-sellector {
+          position: absolute;
+          left: 125px;
+          top: 34px;
+          background-color: #c7d0d8;
+          border-radius: 5px;
+          width: 37px;
+          height: 37px;
+          border: none;
+          color: #ffffff;
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+
+        .time-picker {
+          max-width: 90px;
+        }
+        @include media-breakpoint-down(md) {
+          & {
+            flex-direction: column;
+
+            .start,
+            .finish {
+              .input-wrapper {
+                flex-direction: column;
+
+                input {
+                  max-width: 100%;
+                }
+                .date-picker {
+                  margin-bottom: 10px;
+                }
+                .date-sellector {
+                  right: 3px;
+                  left: unset;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .table-wrapper {
+    max-height: 510px;
+    overflow-y: auto;
+    border: 1px solid #dbdbdb;
+    background-color: #ffffff;
+    padding: 10px 10px;
+  }
+  .difference-wrapper {
+    text-align: right;
+    p {
+      color: #232323;
+      font-family: "Encode-Sans";
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.33px;
+      line-height: 28px;
+      span {
+        color: #3498f1;
+        font-family: "Encode-Sans-Bold";
+        font-size: 24px;
+        letter-spacing: 0.38px;
+        line-height: 46px;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      & {
+        text-align: center;
+      }
+    }
+  }
+}

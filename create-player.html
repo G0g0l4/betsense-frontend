@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="web/bundle/style.css">
     <link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <title>Transactions</title>
+    <title>Create A Player</title>
 </head>
 
 <body>
@@ -87,54 +87,60 @@
             </div>
         </div>
 
-        <div class="container-fluid transactions-bady body">
-            <h3>Transactions</h3>
+        <div class="container-fluid create-player-bady body">
+            <h3>Crediting a player</h3>
 
             <div class="inputs-wrapper">
-                <div class="inputs">
-                    <div class="search-wrapper">
-                        <form>
-                            <label for="id">User ID</label>
-                            <div class="input-wrapper">
-                                <input class="form-control input" id="id" type="text">
-                                <button type="submit" class="btn button blue-btn">Search</button>
-                            </div>
-                        </form>
+                <div class="first-row">
+                    <div class="inputs-iner-wrapper">
+                        <label for="name">User ID</label>
+                        <input type="text" class="form-control input small">
+                        <label for="name">Amount</label>
+                        <input type="text" class="form-control input small">
                     </div>
-                    <div class="filter-wrapepr">
-                        <div class="start">
-                            <label for="start-date">Filter: <span class="red">starting</span></label>
-                            <div class="input-wrapper">
-                                <input id="start-date" class="form-control date-picker input" type="text">
-                                <button class="date-sellector"><i class="fas fa-angle-down"></i></button>
-                                <input class="form-control time-picker input" type="text">
-                            </div>
-                        </div>
-                        <div class="finish">
-                            <label for="finish-date">Filter: <span class="blue">finishing</span></label>
-                            <div class="input-wrapper">
-                                <input id="finish-date" class="form-control date-picker input" type="text">
-                                <button class="date-sellector"><i class="fas fa-angle-down"></i></button>
-                                <input class="form-control time-picker input" type="text">
-                            </div>
-                        </div>
+                    <div class="inputs-iner-wrapper">
+                        <label for="name">Request ID</label>
+                        <input type="text" class="form-control input small">
+                        <label for="name">Game</label>
+                        <select class="form-control middle">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="inputs-iner-wrapper">
+                        <label for="name">Comment</label>
+                        <input type="text" class="form-control input big">
+                        <button class="button btn blue-btn">Credit</button>
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="inputs-iner-wrapper">
+                        <label for="name">User ID</label>
+                        <input type="text" class="form-control input small">
+                        <label for="name">Amount</label>
+                        <input type="text" class="form-control input small">
+                    </div>
+                    <div class="inputs-iner-wrapper">
+                        <label for="name">Request ID</label>
+                        <input type="text" class="form-control input small">
+                        <label for="name">Game</label>
+                        <select class="form-control middle">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="inputs-iner-wrapper">
+                        <label for="name">Comment</label>
+                        <input type="text" class="form-control input big">
+                        <button class="button btn red-btn">Deleting</button>
                     </div>
                 </div>
             </div>
+            <h4>Crediting users list</h4>
             <div class="table-wrapper">
                 <table class="table table-borderless">
                     <thead>
                         <tr>
-                            <th>
-                                <div class="table-header-item">
-                                    <div class="left-line"></div>ID
-                                </div>
-                            </th>
-                            <th>
-                                <div class="table-header-item">
-                                    <div class="left-line"></div>Operation Code
-                                </div>
-                            </th>
                             <th>
                                 <div class="table-header-item">
                                     <div class="left-line"></div>User ID
@@ -142,32 +148,32 @@
                             </th>
                             <th>
                                 <div class="table-header-item">
-                                    <div class="left-line"></div>From
+                                    <div class="left-line"></div>User
                                 </div>
                             </th>
                             <th>
                                 <div class="table-header-item">
-                                    <div class="left-line"></div>To
+                                    <div class="left-line"></div>Request ID
                                 </div>
                             </th>
                             <th>
                                 <div class="table-header-item">
-                                    <div class="left-line"></div>Main Balance
+                                    <div class="left-line"></div>Game's Name
                                 </div>
                             </th>
                             <th>
                                 <div class="table-header-item">
-                                    <div class="left-line"></div>Slot's Balance
+                                    <div class="left-line"></div>No Name
                                 </div>
                             </th>
                             <th>
                                 <div class="table-header-item">
-                                    <div class="left-line"></div>Amount
+                                    <div class="left-line"></div>Blocking Date
                                 </div>
                             </th>
                             <th>
                                 <div class="table-header-item">
-                                    <div class="left-line"></div>Status
+                                    <div class="left-line"></div>Comment
                                 </div>
                             </th>
                         </tr>
@@ -181,8 +187,6 @@
                             <td>Slot Balance</td>
                             <td>33.08 GEL</td>
                             <td>33.08 GEL</td>
-                            <td>33.08 GEL</td>
-                            <td class="red">False</td>
                         </tr>
                         <tr>
                             <td>345324</td>
@@ -192,8 +196,6 @@
                             <td>Slot Balance</td>
                             <td>33.08 GEL</td>
                             <td>33.08 GEL</td>
-                            <td>33.08 GEL</td>
-                            <td class="blue">True</td>
                         </tr>
                         <tr>
                             <td>345324</td>
@@ -203,8 +205,6 @@
                             <td>Slot Balance</td>
                             <td>33.08 GEL</td>
                             <td>33.08 GEL</td>
-                            <td>33.08 GEL</td>
-                            <td class="red">False</td>
                         </tr>
                         <tr>
                             <td>345324</td>
@@ -214,8 +214,6 @@
                             <td>Slot Balance</td>
                             <td>33.08 GEL</td>
                             <td>33.08 GEL</td>
-                            <td>33.08 GEL</td>
-                            <td class="blue">True</td>
                         </tr>
                         <tr>
                             <td>345324</td>
@@ -225,8 +223,6 @@
                             <td>Slot Balance</td>
                             <td>33.08 GEL</td>
                             <td>33.08 GEL</td>
-                            <td>33.08 GEL</td>
-                            <td class="blue">True</td>
                         </tr>
                         <tr>
                             <td>345324</td>
@@ -236,8 +232,6 @@
                             <td>Slot Balance</td>
                             <td>33.08 GEL</td>
                             <td>33.08 GEL</td>
-                            <td>33.08 GEL</td>
-                            <td class="blue">True</td>
                         </tr>
                         <tr>
                             <td>345324</td>
@@ -247,8 +241,6 @@
                             <td>Slot Balance</td>
                             <td>33.08 GEL</td>
                             <td>33.08 GEL</td>
-                            <td>33.08 GEL</td>
-                            <td class="blue">True</td>
                         </tr>
                         <tr>
                             <td>345324</td>
@@ -258,8 +250,6 @@
                             <td>Slot Balance</td>
                             <td>33.08 GEL</td>
                             <td>33.08 GEL</td>
-                            <td>33.08 GEL</td>
-                            <td class="blue">True</td>
                         </tr>
                         <tr>
                             <td>345324</td>
@@ -269,14 +259,15 @@
                             <td>Slot Balance</td>
                             <td>33.08 GEL</td>
                             <td>33.08 GEL</td>
-                            <td>33.08 GEL</td>
-                            <td class="blue">True</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="difference-wrapper">
-                <p>Defferance between transactions: <span> 345 GEL</span> in favor of the casino </p>
+            <div class="pagination">
+                <a>01</a>
+                <a>02</a>
+                <a>03</a>
+                <a>04</a>
             </div>
         </div>
     </div>

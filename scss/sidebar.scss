@@ -9,6 +9,23 @@
   transition: width 0.1s;
   overflow-x: hidden;
 
+  @include media-breakpoint-down(sm) {
+    & {
+      width: 0px;
+    }
+  }
+
+  &.opened {
+    width: 265px;
+
+    @include media-breakpoint-down(sm) {
+      & {
+        width: 100vw;
+        // height: 100vh;
+      }
+    }
+  }
+
   a:hover {
     text-decoration: none;
   }
@@ -27,6 +44,29 @@
       color: #ffffff;
       font-family: "Encode-Sans-Bold";
       font-size: 28px;
+    }
+    .close-sidebar-btn {
+      display: none;
+
+      div {
+        background-color: $red;
+        width: 35px;
+        height: 3px;
+        position: absolute;
+
+        &.first-line {
+          transform: rotate(45deg);
+        }
+        &.second-line {
+          transform: rotate(-45deg);
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        & {
+          display: block;
+        }
+      }
     }
   }
 
@@ -195,6 +235,22 @@
   padding-left: 80px;
   transition: padding-left 0.2s;
 
+  @include media-breakpoint-down(sm) {
+    & {
+      padding-left: 0;
+    }
+  }
+
+  &.sidebar-opened {
+    padding-left: 265px;
+
+    @include media-breakpoint-down(sm) {
+      & {
+        padding-left: 0;
+      }
+    }
+  }
+
   .header-wrapper {
     background-color: #ffffff;
 
@@ -207,13 +263,6 @@
       height: 75px;
 
       .hamburger-btn {
-        background: none;
-        border: none;
-        &:focus {
-          outline: none;
-          box-shadow: none;
-        }
-
         div {
           width: 29px;
           border-bottom: 3px solid #16468f;
@@ -237,6 +286,27 @@
           font-size: 12px;
           font-weight: 500;
           letter-spacing: 0.58px;
+        }
+        @include media-breakpoint-down(sm) {
+          & {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .body {
+    padding: 0px 50px;
+    h3 {
+      color: #061836;
+      font-family: "Encode-Sans-Bold";
+      font-size: 28px;
+      letter-spacing: -0.5px;
+      line-height: 62px;
+      padding-left: 20px;
+      @include media-breakpoint-down(sm) {
+        & {
+          padding-left: 0;
         }
       }
     }

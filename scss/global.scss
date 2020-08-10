@@ -21,3 +21,53 @@
 .red-btn {
   background-color: $red;
 }
+
+.input {
+  height: 43px;
+  border-radius: 4px;
+  border: 1px solid #aec8de;
+  padding-left: 20px;
+
+  &::-webkit-input-placeholder {
+    color: $gray;
+    font-family: "Encode-Sans";
+    font-size: 13px;
+    letter-spacing: 0.08px;
+    line-height: 23px;
+  }
+  &::-moz-placeholder {
+    color: $gray;
+    font-family: "Encode-Sans";
+    font-size: 13px;
+    letter-spacing: 0.08px;
+    line-height: 23px;
+  }
+  &:-ms-input-placeholder {
+    color: $gray;
+    font-family: "Encode-Sans";
+    font-size: 13px;
+    letter-spacing: 0.08px;
+    line-height: 23px;
+  }
+  &:-moz-placeholder {
+    color: $gray;
+    font-family: "Encode-Sans";
+    font-size: 13px;
+    letter-spacing: 0.08px;
+    line-height: 23px;
+  }
+}
+
+.hide-overflow {
+  @include media-breakpoint-down(sm) {
+    overflow: hidden;
+  }
+}
+button {
+  background: none;
+  border: none;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}

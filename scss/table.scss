@@ -1,0 +1,55 @@
+table {
+  thead {
+    tr {
+      th {
+        position: relative;
+        color: #3a3939;
+        font-family: "Encode-Sans-Bold";
+        font-size: 14px;
+        letter-spacing: 0.19px;
+        line-height: 23px;
+
+        .table-header-item {
+          display: flex;
+          align-items: center;
+
+          .left-line {
+            position: absolute;
+            height: 25px;
+            width: 1px;
+            left: 0;
+            background: $gray;
+          }
+        }
+      }
+    }
+  }
+  tbody {
+    tr {
+      td {
+        color: #232323;
+        font-family: "Encode-Sans";
+        font-size: 13px;
+        letter-spacing: 0.33px;
+        line-height: 28px;
+      }
+      &:nth-child(odd) {
+        background-color: #f8f8f8;
+      }
+      .red {
+        color: $red;
+      }
+      .blue {
+        color: #16468f;
+      }
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    & {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+}
