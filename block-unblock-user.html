@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="web/bundle/style.css">
     <link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <title>Create A Player</title>
+    <title>Block / Unblock User</title>
 </head>
 
 <body>
@@ -87,68 +87,42 @@
             </div>
         </div>
 
-        <div class="container-fluid create-player-bady body">
-            <h3>Crediting a player</h3>
+        <div class="container-fluid block-unblock-user-bady body">
+            <h3>Block / unblock user</h3>
 
             <div class="inputs-wrapper">
                 <div class="first-row row">
-                    <div class="col-8 row">
                         <div class="input-wrapper col-lg-3 col-md-12">
                             <label for="user-id1">User ID</label>
-                            <input type="text" id="user-id1" class="form-control input small">
+                            <input type="text" id="user-id1" class="form-control input">
                         </div>
                         <div class="input-wrapper col-lg-3 col-md-12">
-                            <label for="amount1">Amount</label>
-                            <input type="text" id="amount1" class="form-control input small">
-                        </div>
-                        <div class="input-wrapper col-lg-3 col-md-12">
-                            <label for="request-id1">Request ID</label>
-                            <input type="text" id="request-id1" class="form-control input small">
-                        </div>
-                        <div class="input-wrapper col-lg-5 col-md-12">
                             <label for="game1">Game</label>
-                            <select id="game1" class="form-control middle">
-                                <option selected>Choose...</option>
-                                <option>...</option>
-                            </select>
+                            <input type="text" id="game1" class="form-control input">
                         </div>
-                    </div>
-                    <div class="col-4 row">
-                        <div class="input-wrapper col-lg-9 col-md-12">
-                            <label for="comment1">Comment</label>
-                            <input type="text" id="comment1" class="form-control input big">
+                        <div class="input-wrapper col-lg-4 col-md-12">
+                            <label for="comment1">Commnet</label>
+                            <input type="text" id="comment1" class="form-control input">
                         </div>
-                        <button class="button btn blue-btn col-lg-3 col-md-6 col-sm-12">Credit</button>
-                    </div>
+                        <button class="btn button red-btn col-lg-2 col-md-6 col-sm-12">Block user</button>
                 </div>
                 <div class="second-row row">
                     <div class="input-wrapper col-lg-3 col-md-12">
                         <label for="user-id">User ID</label>
-                        <input type="text" id="user-id" class="form-control input small">
-                    </div>
-                    <div class="input-wrapper col-lg-3 col-md-12">
-                        <label for="amount">Amount</label>
-                        <input type="text" id="amount" class="form-control input small">
-                    </div>
-                    <div class="input-wrapper col-lg-3 col-md-12">
-                        <label for="request-id">Request ID</label>
-                        <input type="text" id="request-id" class="form-control input small">
+                        <input type="text" id="user-id" class="form-control input">
                     </div>
                     <div class="input-wrapper col-lg-3 col-md-12">
                         <label for="game">Game</label>
-                        <select id="game" class="form-control middle">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                        </select>
+                        <input type="text" id="game" class="form-control input">
                     </div>
-                    <div class="input-wrapper col-lg-3 col-md-12">
+                    <div class="input-wrapper col-lg-4 col-md-12">
                         <label for="comment">Comment</label>
-                        <input type="text" id="comment" class="form-control input big">
+                        <input type="text" id="comment" class="form-control input">
                     </div>
-                    <button class="button btn red-btn col-lg-2 col-md-6 col-sm-12">Deleting</button>
+                    <button class="btn button blue-btn col-lg-2 col-md-6 col-sm-12">Block user</button>
                 </div>
             </div>
-            <h4>Crediting users list</h4>
+            <h4>Blocked users list</h4>
             <div class="table-wrapper">
                 <table class="table table-borderless">
                     <thead>
@@ -165,22 +139,17 @@
                             </th>
                             <th>
                                 <div class="table-header-item">
-                                    <div class="left-line"></div>Request ID
+                                    <div class="left-line"></div>Game's name
                                 </div>
                             </th>
                             <th>
                                 <div class="table-header-item">
-                                    <div class="left-line"></div>Game's Name
+                                    <div class="left-line"></div>Registration's date
                                 </div>
                             </th>
                             <th>
                                 <div class="table-header-item">
-                                    <div class="left-line"></div>No Name
-                                </div>
-                            </th>
-                            <th>
-                                <div class="table-header-item">
-                                    <div class="left-line"></div>Blocking Date
+                                    <div class="left-line"></div>Bloking date
                                 </div>
                             </th>
                             <th>
@@ -193,93 +162,78 @@
                     <tbody>
                         <tr>
                             <td>345324</td>
-                            <td>q324q34q34-w45uy65e5-56756uy65-45t4g4</td>
-                            <td>657463</td>
-                            <td>Slot Balance</td>
-                            <td>Slot Balance</td>
-                            <td>33.08 GEL</td>
+                            <td><i class="fas fa-lock"></i> Soxa232</td>
+                            <td>Sparta</td>
+                            <td>2018. 03. 31</td>
+                            <td>2018. 03. 31</td>
+                            <td>The game immediately stops working</td>
+                        </tr>
+                        <tr>
+                            <td>345324</td>
+                            <td><i class="fas fa-lock"></i>Vasikoking</td>
+                            <td>Dictator</td>
+                            <td>2018. 03. 31</td>
+                            <td>2018. 03. 31</td>
+                            <td>Happy to report: the game is working again!</td>
+                        </tr>
+                        <tr>
+                            <td>345324</td>
+                            <td><i class="fas fa-lock"></i>SlavaGest</td>
+                            <td>Nu Pagadi</td>
+                            <td>2018. 03. 31</td>
+                            <td>2018. 03. 31</td>
+                            <td>The game immediately stops working</td>
+                        </tr>
+                        <tr>
+                            <td>345324</td>
+                            <td><i class="fas fa-lock"></i>VaxoLej12</td>
+                            <td>Rugby Scrum</td>
+                            <td>2018. 03. 31</td>
+                            <td>2018. 03. 31</td>
+                            <td>The game immediately stops working</td>
+                        </tr>
+                        <tr>
+                            <td>345324</td>
+                            <td><i class="fas fa-lock"></i>Abram</td>
+                            <td>5 Diamonds</td>
+                            <td>2018. 03. 31</td>
+                            <td>2018. 03. 31</td>
                             <td>33.08 GEL</td>
                         </tr>
                         <tr>
                             <td>345324</td>
-                            <td>q324q34q34-w45uy65e5-56756uy65-45t4g4</td>
-                            <td>657463</td>
-                            <td>Slot Balance</td>
-                            <td>Slot Balance</td>
-                            <td>33.08 GEL</td>
-                            <td>33.08 GEL</td>
+                            <td><i class="fas fa-lock"></i>Karabas</td>
+                            <td>Sparta</td>
+                            <td>2018. 03. 31</td>
+                            <td>2018. 03. 31</td>
+                            <td>Bloking money again</td>
                         </tr>
                         <tr>
                             <td>345324</td>
-                            <td>q324q34q34-w45uy65e5-56756uy65-45t4g4</td>
-                            <td>657463</td>
-                            <td>Slot Balance</td>
-                            <td>Slot Balance</td>
-                            <td>33.08 GEL</td>
-                            <td>33.08 GEL</td>
+                            <td><i class="fas fa-lock"></i>Vakeli</td>
+                            <td>Dictator</td>
+                            <td>2018. 03. 31</td>
+                            <td>2018. 03. 31</td>
+                            <td>Bloking money again</td>
                         </tr>
                         <tr>
                             <td>345324</td>
-                            <td>q324q34q34-w45uy65e5-56756uy65-45t4g4</td>
-                            <td>657463</td>
-                            <td>Slot Balance</td>
-                            <td>Slot Balance</td>
-                            <td>33.08 GEL</td>
-                            <td>33.08 GEL</td>
+                            <td><i class="fas fa-lock"></i>Zanzika</td>
+                            <td>Nu Pagadi</td>
+                            <td>2018. 03. 31</td>
+                            <td>2018. 03. 31</td>
+                            <td>Bloking money again</td>
                         </tr>
                         <tr>
                             <td>345324</td>
-                            <td>q324q34q34-w45uy65e5-56756uy65-45t4g4</td>
-                            <td>657463</td>
-                            <td>Slot Balance</td>
-                            <td>Slot Balance</td>
-                            <td>33.08 GEL</td>
-                            <td>33.08 GEL</td>
-                        </tr>
-                        <tr>
-                            <td>345324</td>
-                            <td>q324q34q34-w45uy65e5-56756uy65-45t4g4</td>
-                            <td>657463</td>
-                            <td>Slot Balance</td>
-                            <td>Slot Balance</td>
-                            <td>33.08 GEL</td>
-                            <td>33.08 GEL</td>
-                        </tr>
-                        <tr>
-                            <td>345324</td>
-                            <td>q324q34q34-w45uy65e5-56756uy65-45t4g4</td>
-                            <td>657463</td>
-                            <td>Slot Balance</td>
-                            <td>Slot Balance</td>
-                            <td>33.08 GEL</td>
-                            <td>33.08 GEL</td>
-                        </tr>
-                        <tr>
-                            <td>345324</td>
-                            <td>q324q34q34-w45uy65e5-56756uy65-45t4g4</td>
-                            <td>657463</td>
-                            <td>Slot Balance</td>
-                            <td>Slot Balance</td>
-                            <td>33.08 GEL</td>
-                            <td>33.08 GEL</td>
-                        </tr>
-                        <tr>
-                            <td>345324</td>
-                            <td>q324q34q34-w45uy65e5-56756uy65-45t4g4</td>
-                            <td>657463</td>
-                            <td>Slot Balance</td>
-                            <td>Slot Balance</td>
-                            <td>33.08 GEL</td>
-                            <td>33.08 GEL</td>
+                            <td><i class="fas fa-lock"></i>Jorik 83</td>
+                            <td>Rugby Scrum</td>
+                            <td>2018. 03. 31</td>
+                            <td>2018. 03. 31</td>
+                            <td>Bloking money again</td>
                         </tr>
                     </tbody>
                 </table>
-            </div>
-            <div class="pagination">
-                <a>01</a>
-                <a>02</a>
-                <a>03</a>
-                <a>04</a>
             </div>
         </div>
     </div>

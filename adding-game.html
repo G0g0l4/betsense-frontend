@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="web/bundle/style.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <title>Adding game</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-wrapper">
+            <a href="#" class="show">B</a>
+            <a href="#" class="hide">Betsense <img src="./web/img/1-gray.png"></a>
+            <button class="close-sidebar-btn">
+                <div class="first-line"></div>
+                <div class="second-line"></div>
+            </button>
+        </div>
+        <div class="nav-wrapper">
+            <a class="nav-item" href="#"> <i class="fa fa-file-text-o"></i> <span class="hide">Review</span> </a>
+            <a class="nav-item dropdwon-nav-item" href="#"> <i class="fas fa-list-ul"></i> <span class="hide">Slots <i
+                        class="fas fa-chevron-right"></i></span> </a>
+            <div class="dp hide">
+                <div class="dp-item-wrapper">
+                    <a href="#"> Frozen Fruits</a>
+                </div>
+                <div class="dp-item-wrapper">
+                    <a href="#"> 40 Slice Fruits</a>
+                </div>
+                <div class="dp-item-wrapper">
+                    <a href='#'> 2-Sclice Fruits</a>
+                </div>
+                <div class="dp-item-wrapper">
+                    <a href="#"> Dragon Fruit </a>
+                </div>
+                <div class="dp-item-wrapper">
+                    <a href="#"> Star Fruit</a>
+                </div>
+                <div class="dp-item-wrapper">
+                    <a href="#"> Mammoth </a>
+                </div>
+                <div class="dp-item-wrapper">
+                    <a href="#"> Africa </a>
+                </div>
+                <div class="dp-item-wrapper">
+                    <a href="#"> 5 Diamonds</a>
+                </div>
+                <div class="dp-item-wrapper">
+                    <a href="#"> Sparta</a>
+                </div>
+            </div>
+            <a class="nav-item" href="#"><img src="./web/img/+7.png"> <span class="hide">Add game</span> </a>
+            <a class="nav-item" href="/add-user.html"> <img src="./web/img/user.png">
+                <spna class="hide">Add user</spna>
+            </a>
+        </div>
+        <div class="bottom">
+            <ul>
+                <li> <a href="#" class="green-circle"><i class="fas fa-plus"></i></a> <span class="hide">ADD USER</span>
+                </li>
+                <li> <a href="#" class="blue-circle"><i class="fas fa-plus"></i></a> <span class="hide">ADD GAME</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+
+
+        <div class="container-fluid header-wrapper">
+            <div class="header">
+                <button class="hamburger-btn">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+
+                <div class="user">
+                    <i class="far fa-user"></i>
+                    <span>s.rcheulishvili@leader-bet.com</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid adding-game-bady body">
+            <h3>Adding game</h3>
+
+            <div class="inputs-wrapper">
+                <div class="first-row">
+                    <div class="input-wrapper">
+                        <label for="game-name">Game name</label>
+                        <input type="text" id="game-name" class="form-control input">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="game-id">Game ID</label>
+                        <input type="text" id="game-id" class="form-control input">
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="group">
+                        <div class="input-wrapper">
+                            <label for="icon">Adding game icon</label>
+                            <input type="text" id="icon" class="form-control input" value="">
+                            <input type="file" id="file-input" hidden>
+                        </div>
+                        <button class="btn button green-btn" id="file-uploader">Browse file</button>
+                    </div>
+                    <div>
+                        <button class="btn button blue-btn">Add game</button>
+                    </div>
+                </div>
+            </div>
+            <h4>Added games list</h4>
+            <div class="table-wrapper">
+                <table class="table table-borderless">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="table-header-item">
+                                    <div class="left-line"></div>Game name
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table-header-item">
+                                    <div class="left-line"></div>Game ID
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table-header-item">
+                                    <div class="left-line"></div>Delete
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sparta</td>
+                            <td>345324</td>
+                            <td><button class="red"><i class="far fa-trash-alt"></button></td>
+                        </tr>
+                        <tr>
+                            <td>Dictator</td>
+                            <td>345324</td>
+                            <td><button class="red"><i class="far fa-trash-alt"></button></td>
+                        </tr>
+                        <tr>
+                            <td>Nu Pagadi</td>
+                            <td>345324</td>
+                            <td><button class="red"><i class="far fa-trash-alt"></button></i></td>
+                        </tr>
+                        <tr>
+                            <td>Rugby Scrum</td>
+                            <td>345324</td>
+                            <td><button class="red"><i class="far fa-trash-alt"></button></i></td>
+                        </tr>
+                        <tr>
+                            <td>5 Diamonds</td>
+                            <td>345324</td>
+                            <td><button class="red"><i class="far fa-trash-alt"></button></i></td>
+                        </tr>
+                        <tr>
+                            <td>Sparta</td>
+                            <td>345324</td>
+                            <td><button class="red"><i class="far fa-trash-alt"></button></td>
+                        </tr>
+                        <tr>
+                            <td>Dictator</td>
+                            <td>345324</td>
+                            <td><button class="red"><i class="far fa-trash-alt"></button></td>
+                        </tr>
+                        <tr>
+                            <td>Nu Pagadi</td>
+                            <td>345324</td>
+                            <td><button class="red"><i class="far fa-trash-alt"></button></td>
+                        </tr>
+                        <tr>
+                            <td>Rugby Scrum</td>
+                            <td>345324</td>
+                            <td><button class="red"><i class="far fa-trash-alt"></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="web/bundle/app.js"></script>
+</body>
+
+</html>

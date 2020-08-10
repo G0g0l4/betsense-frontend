@@ -57,3 +57,11 @@ $(".dropdwon-nav-item").click(function () {
   $(".dp").toggleClass("show-dropdown");
   $("i").toggleClass("rotated");
 });
+
+$("#file-uploader").click(function () {
+  $("#file-input").click();
+});
+
+$("#file-input").change(function () {
+  $("#icon")[0].value = $(this).val();
+});

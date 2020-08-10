@@ -1,0 +1,55 @@
+.block-unblock-user-bady {
+  .inputs-wrapper {
+    background-color: #eaeff3;
+    padding: 40px 50px;
+    margin-bottom: 25px;
+
+    .button {
+      height: 43px;
+    }
+
+    .first-row,
+    .second-row {
+      display: flex;
+      align-items: flex-end;
+      @include media-breakpoint-down(md) {
+        & {
+          justify-content: center;
+        }
+      }
+      .input-wrapper {
+        @include media-breakpoint-down(md) {
+          & {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    .first-row {
+      margin-bottom: 25px;
+    }
+  }
+  h4 {
+    color: #061836;
+    font-family: "Encode-Sans";
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.36px;
+    line-height: 41px;
+    padding-left: 20px;
+  }
+  .table-wrapper {
+    max-height: 510px;
+    overflow-y: auto;
+    border: 1px solid #dbdbdb;
+    background-color: #ffffff;
+    padding: 10px 10px;
+
+    i {
+      color: #c7d0d8;
+      font-size: 17px;
+      letter-spacing: -0.34px;
+      margin-right: 5px;
+    }
+  }
+}

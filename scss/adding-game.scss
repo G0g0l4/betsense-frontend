@@ -1,0 +1,64 @@
+.adding-game-bady {
+  h3 {
+    padding-left: 0 !important;
+  }
+  .inputs-wrapper {
+    background-color: #eaeff3;
+    padding: 40px 20px;
+    margin-bottom: 25px;
+
+    .button {
+      height: 43px;
+    }
+
+    .first-row {
+      display: flex;
+      margin-bottom: 10px;
+
+      .input {
+        width: 340px;
+        margin-right: 10px;
+      }
+    }
+    .second-row {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      .input {
+        width: 547px;
+        margin-right: 10px;
+      }
+      .button {
+        width: 132px;
+      }
+      .group {
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+  }
+
+  h4 {
+    color: #061836;
+    font-family: "Encode-Sans";
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.36px;
+    line-height: 41px;
+    padding-left: 20px;
+  }
+  .table-wrapper {
+    max-height: 510px;
+    overflow-y: auto;
+    border: 1px solid #dbdbdb;
+    background-color: #ffffff;
+    padding: 10px 10px;
+
+    table {
+      @include media-breakpoint-down(lg) {
+          display: inline-table;
+      }
+    }
+  }
+}

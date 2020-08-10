@@ -566,6 +566,7 @@ pre code {
 }
 .row {
   display: flex;
+  flex: 1 0 100%;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
@@ -9981,6 +9982,16 @@ button:focus {
   box-shadow: none;
 }
 
+label {
+  padding-left: 20px;
+  color: #3a3939;
+  font-family: "Encode-Sans";
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.19px;
+  line-height: 23px;
+}
+
 table thead tr th {
   position: relative;
   color: #3a3939;
@@ -10626,58 +10637,17 @@ table tbody tr .blue {
 .create-player-bady .inputs-wrapper .second-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-.create-player-bady .inputs-wrapper .first-row .inputs-iner-wrapper,
-.create-player-bady .inputs-wrapper .second-row .inputs-iner-wrapper {
-  display: flex;
-}
-.create-player-bady .inputs-wrapper .first-row .inputs-iner-wrapper .button,
-.create-player-bady .inputs-wrapper .second-row .inputs-iner-wrapper .button {
+.create-player-bady .inputs-wrapper .first-row .button,
+.create-player-bady .inputs-wrapper .second-row .button {
   height: 43px;
 }
-.create-player-bady .inputs-wrapper .first-row .inputs-iner-wrapper select,
-.create-player-bady .inputs-wrapper .second-row .inputs-iner-wrapper select {
+.create-player-bady .inputs-wrapper .first-row .input-wrapper select,
+.create-player-bady .inputs-wrapper .second-row .input-wrapper select {
   height: 43px;
-}
-@media (max-width: 1199.98px) {
-  .create-player-bady .inputs-wrapper .first-row .inputs-iner-wrapper,
-.create-player-bady .inputs-wrapper .second-row .inputs-iner-wrapper {
-    flex-direction: column;
-  }
-  .create-player-bady .inputs-wrapper .first-row .inputs-iner-wrapper .button,
-.create-player-bady .inputs-wrapper .second-row .inputs-iner-wrapper .button {
-    width: 225px;
-    margin-bottom: 20px;
-  }
-}
-.create-player-bady .inputs-wrapper .second-row .inputs-iner-wrapper label {
-  display: none;
-}
-@media (max-width: 1199.98px) {
-  .create-player-bady .inputs-wrapper .second-row .inputs-iner-wrapper label {
-    display: block;
-  }
 }
 .create-player-bady .inputs-wrapper .first-row {
   margin-bottom: 20px;
-}
-.create-player-bady .inputs-wrapper .small {
-  width: 120px;
-}
-.create-player-bady .inputs-wrapper .middle {
-  width: 225px;
-}
-.create-player-bady .inputs-wrapper .big {
-  width: 380px;
-}
-@media (max-width: 1199.98px) {
-  .create-player-bady .inputs-wrapper .small,
-.create-player-bady .inputs-wrapper .middle,
-.create-player-bady .inputs-wrapper .big {
-    width: 225px;
-    margin-bottom: 20px;
-  }
 }
 .create-player-bady h4 {
   color: #061836;
@@ -10712,5 +10682,113 @@ table tbody tr .blue {
 }
 .create-player-bady .pagination a:not(:last-child) {
   margin-right: 10px;
+}
+
+.block-unblock-user-bady .inputs-wrapper {
+  background-color: #eaeff3;
+  padding: 40px 50px;
+  margin-bottom: 25px;
+}
+.block-unblock-user-bady .inputs-wrapper .button {
+  height: 43px;
+}
+.block-unblock-user-bady .inputs-wrapper .first-row,
+.block-unblock-user-bady .inputs-wrapper .second-row {
+  display: flex;
+  align-items: flex-end;
+}
+@media (max-width: 991.98px) {
+  .block-unblock-user-bady .inputs-wrapper .first-row,
+.block-unblock-user-bady .inputs-wrapper .second-row {
+    justify-content: center;
+  }
+}
+@media (max-width: 991.98px) {
+  .block-unblock-user-bady .inputs-wrapper .first-row .input-wrapper,
+.block-unblock-user-bady .inputs-wrapper .second-row .input-wrapper {
+    margin-bottom: 20px;
+  }
+}
+.block-unblock-user-bady .inputs-wrapper .first-row {
+  margin-bottom: 25px;
+}
+.block-unblock-user-bady h4 {
+  color: #061836;
+  font-family: "Encode-Sans";
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.36px;
+  line-height: 41px;
+  padding-left: 20px;
+}
+.block-unblock-user-bady .table-wrapper {
+  max-height: 510px;
+  overflow-y: auto;
+  border: 1px solid #dbdbdb;
+  background-color: #ffffff;
+  padding: 10px 10px;
+}
+.block-unblock-user-bady .table-wrapper i {
+  color: #c7d0d8;
+  font-size: 17px;
+  letter-spacing: -0.34px;
+  margin-right: 5px;
+}
+
+.adding-game-bady h3 {
+  padding-left: 0 !important;
+}
+.adding-game-bady .inputs-wrapper {
+  background-color: #eaeff3;
+  padding: 40px 20px;
+  margin-bottom: 25px;
+}
+.adding-game-bady .inputs-wrapper .button {
+  height: 43px;
+}
+.adding-game-bady .inputs-wrapper .first-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+.adding-game-bady .inputs-wrapper .first-row .input {
+  width: 340px;
+  margin-right: 10px;
+}
+.adding-game-bady .inputs-wrapper .second-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.adding-game-bady .inputs-wrapper .second-row .input {
+  width: 547px;
+  margin-right: 10px;
+}
+.adding-game-bady .inputs-wrapper .second-row .button {
+  width: 132px;
+}
+.adding-game-bady .inputs-wrapper .second-row .group {
+  display: flex;
+  align-items: flex-end;
+}
+.adding-game-bady h4 {
+  color: #061836;
+  font-family: "Encode-Sans";
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.36px;
+  line-height: 41px;
+  padding-left: 20px;
+}
+.adding-game-bady .table-wrapper {
+  max-height: 510px;
+  overflow-y: auto;
+  border: 1px solid #dbdbdb;
+  background-color: #ffffff;
+  padding: 10px 10px;
+}
+@media (max-width: 1199.98px) {
+  .adding-game-bady .table-wrapper table {
+    display: inline-table;
+  }
 }
 /*# sourceMappingURL=style.css.map*/
