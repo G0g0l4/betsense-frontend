@@ -92,60 +92,77 @@
 
             <div class="inputs-wrapper">
                 <div class="first-row row">
-                    <div class="col-8 row">
-                        <div class="input-wrapper col-lg-3 col-md-12">
-                            <label for="user-id1">User ID</label>
-                            <input type="text" id="user-id1" class="form-control input small">
-                        </div>
-                        <div class="input-wrapper col-lg-3 col-md-12">
-                            <label for="amount1">Amount</label>
-                            <input type="text" id="amount1" class="form-control input small">
-                        </div>
-                        <div class="input-wrapper col-lg-3 col-md-12">
-                            <label for="request-id1">Request ID</label>
-                            <input type="text" id="request-id1" class="form-control input small">
-                        </div>
-                        <div class="input-wrapper col-lg-5 col-md-12">
-                            <label for="game1">Game</label>
-                            <select id="game1" class="form-control middle">
-                                <option selected>Choose...</option>
-                                <option>...</option>
-                            </select>
+                    <div class="col-xl-4 col-lg-12">
+                        <div class="row">
+                            <div class="input-wrapper col-xl-4 col-lg-4 remove-right-padding">
+                                <label for="user-id1">User ID</label>
+                                <input type="text" id="user-id1" class="form-control input small">
+                            </div>
+                            <div class="input-wrapper col-xl-4 col-lg-4 remove-right-padding">
+                                <label for="amount1">Amount</label>
+                                <input type="text" id="amount1" class="form-control input small">
+                            </div>
+                            <div class="input-wrapper col-xl-4 col-lg-4 remove-right-padding">
+                                <label for="request-id1">Request ID</label>
+                                <input type="text" id="request-id1" class="form-control input small">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-4 row">
-                        <div class="input-wrapper col-lg-9 col-md-12">
-                            <label for="comment1">Comment</label>
-                            <input type="text" id="comment1" class="form-control input big">
+                    <div class="col-xl-8 col-lg-12">
+                        <div class="row align-items-end">
+                            <div class="input-wrapper col-xl-4 col-lg-4 remove-right-padding">
+                                <label for="game1">Game</label>
+                                <select id="game1" class="form-control middle">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="input-wrapper col-xl-6 col-lg-6 remove-right-padding">
+                                <label for="comment1">Comment</label>
+                                <input type="text" id="comment1" class="form-control input big">
+                            </div>
+                            <div class="btn-wrpper col-xl-2 col-lg-2">
+                                <button class="button btn blue-btn w-100">Credit</button>
+                            </div>
                         </div>
-                        <button class="button btn blue-btn col-lg-3 col-md-6 col-sm-12">Credit</button>
                     </div>
                 </div>
+                <hr class="hidden-label" />
                 <div class="second-row row">
-                    <div class="input-wrapper col-lg-3 col-md-12">
-                        <label for="user-id">User ID</label>
-                        <input type="text" id="user-id" class="form-control input small">
+                    <div class="col-xl-4 col-lg-12">
+                        <div class="row">
+                            <div class="input-wrapper col-xl-4 col-lg-4 remove-right-padding">
+                                <label for="user-id" class="hidden-label">User ID</label>
+                                <input type="text" id="user-id" class="form-control input small">
+                            </div>
+                            <div class="input-wrapper col-xl-4 col-lg-4 remove-right-padding">
+                                <label for="amount" class="hidden-label">Amount</label>
+                                <input type="text" id="amount" class="form-control input small">
+                            </div>
+                            <div class="input-wrapper col-xl-4 col-lg-4 remove-right-padding">
+                                <label for="request-id" class="hidden-label">Request ID</label>
+                                <input type="text" id="request-id" class="form-control input small">
+                            </div>
+                        </div>
                     </div>
-                    <div class="input-wrapper col-lg-3 col-md-12">
-                        <label for="amount">Amount</label>
-                        <input type="text" id="amount" class="form-control input small">
+                    <div class="col-xl-8 col-lg-12">
+                        <div class="row align-items-end">
+                            <div class="input-wrapper col-xl-4 col-lg-4 remove-right-padding">
+                                <label for="game" class="hidden-label">Game</label>
+                                <select id="game" class="form-control middle">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="input-wrapper col-xl-6 col-lg-6 remove-right-padding">
+                                <label for="comment" class="hidden-label">Comment</label>
+                                <input type="text" id="comment" class="form-control input big">
+                            </div>
+                            <div class="btn-wrapper col-xl-2 col-lg-2">
+                                <button class="button btn red-btn w-100">Deleting</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="input-wrapper col-lg-3 col-md-12">
-                        <label for="request-id">Request ID</label>
-                        <input type="text" id="request-id" class="form-control input small">
-                    </div>
-                    <div class="input-wrapper col-lg-3 col-md-12">
-                        <label for="game">Game</label>
-                        <select id="game" class="form-control middle">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                        </select>
-                    </div>
-                    <div class="input-wrapper col-lg-3 col-md-12">
-                        <label for="comment">Comment</label>
-                        <input type="text" id="comment" class="form-control input big">
-                    </div>
-                    <button class="button btn red-btn col-lg-2 col-md-6 col-sm-12">Deleting</button>
                 </div>
             </div>
             <h4>Crediting users list</h4>

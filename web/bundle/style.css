@@ -566,7 +566,6 @@ pre code {
 }
 .row {
   display: flex;
-  flex: 1 0 100%;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
@@ -10633,21 +10632,51 @@ table tbody tr .blue {
   padding: 40px 35px;
   margin-bottom: 25px;
 }
-.create-player-bady .inputs-wrapper .first-row,
-.create-player-bady .inputs-wrapper .second-row {
-  display: flex;
-  justify-content: space-between;
+.create-player-bady .inputs-wrapper .hidden-label {
+  display: none;
+}
+@media (max-width: 1199.98px) {
+  .create-player-bady .inputs-wrapper .hidden-label {
+    display: block;
+  }
+}
+.create-player-bady .inputs-wrapper .first-row .remove-right-padding,
+.create-player-bady .inputs-wrapper .second-row .remove-right-padding {
+  padding-right: 0;
+}
+@media (max-width: 1199.98px) {
+  .create-player-bady .inputs-wrapper .first-row .remove-right-padding,
+.create-player-bady .inputs-wrapper .second-row .remove-right-padding {
+    padding-right: 15px;
+  }
 }
 .create-player-bady .inputs-wrapper .first-row .button,
 .create-player-bady .inputs-wrapper .second-row .button {
   height: 43px;
 }
+@media (max-width: 991.98px) {
+  .create-player-bady .inputs-wrapper .first-row .button,
+.create-player-bady .inputs-wrapper .second-row .button {
+    margin-top: 10px;
+  }
+}
 .create-player-bady .inputs-wrapper .first-row .input-wrapper select,
 .create-player-bady .inputs-wrapper .second-row .input-wrapper select {
   height: 43px;
 }
+@media (max-width: 991.98px) {
+  .create-player-bady .inputs-wrapper .first-row .input-wrapper,
+.create-player-bady .inputs-wrapper .second-row .input-wrapper {
+    margin-bottom: 10px;
+  }
+}
 .create-player-bady .inputs-wrapper .first-row {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+@media (max-width: 1199.98px) {
+  .create-player-bady .inputs-wrapper .first-row {
+    margin-bottom: 20px;
+  }
 }
 .create-player-bady h4 {
   color: #061836;

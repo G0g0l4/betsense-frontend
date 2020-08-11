@@ -4,21 +4,52 @@
     padding: 40px 35px;
     margin-bottom: 25px;
 
+    .hidden-label {
+      display: none;
+
+      @include media-breakpoint-down(lg) {
+        & {
+          display: block;
+        }
+      }
+    }
+
     .first-row,
     .second-row {
-      display: flex;
-      justify-content: space-between;
+      .remove-right-padding {
+        padding-right: 0;
+        @include media-breakpoint-down(lg) {
+          & {
+            padding-right: 15px;
+          }
+        }
+      }
       .button {
         height: 43px;
+        @include media-breakpoint-down(md) {
+          & {
+            margin-top: 10px;
+          }
+        }
       }
       .input-wrapper {
         select {
           height: 43px;
         }
+        @include media-breakpoint-down(md) {
+          & {
+            margin-bottom: 10px;
+          }
+        }
       }
     }
     .first-row {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+      @include media-breakpoint-down(lg) {
+        & {
+          margin-bottom: 20px;
+        }
+      }
     }
   }
   h4 {
