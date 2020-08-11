@@ -6,6 +6,7 @@
 
     .button {
       height: 43px;
+      width: 100%;
     }
 
     .first-row,
@@ -18,9 +19,17 @@
         }
       }
       .input-wrapper {
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(sm) {
           & {
             margin-bottom: 20px;
+          }
+        }
+      }
+      .hidden-label {
+        display: none;
+        @include media-breakpoint-down(lg) {
+          & {
+            display: block;
           }
         }
       }

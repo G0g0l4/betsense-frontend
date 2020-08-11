@@ -90,28 +90,36 @@
         <div class="container-fluid adding-game-bady body">
             <h3>Adding game</h3>
 
-            <div class="inputs-wrapper">
-                <div class="first-row">
-                    <div class="input-wrapper">
-                        <label for="game-name">Game name</label>
-                        <input type="text" id="game-name" class="form-control input">
-                    </div>
-                    <div class="input-wrapper">
-                        <label for="game-id">Game ID</label>
-                        <input type="text" id="game-id" class="form-control input">
+            <div class="inputs-wrapper row">
+                <div class="first-row col-xl-7 col-lg-12">
+                    <div class="row">
+                        <div class="input-wrapper col-xl-6">
+                            <label for="game-name">Game name</label>
+                            <input type="text" id="game-name" class="form-control input">
+                        </div>
+                        <div class="input-wrapper col-xl-6">
+                            <label for="game-id">Game ID</label>
+                            <input type="text" id="game-id" class="form-control input">
+                        </div>
                     </div>
                 </div>
-                <div class="second-row">
-                    <div class="group">
-                        <div class="input-wrapper">
-                            <label for="icon">Adding game icon</label>
-                            <input type="text" id="icon" class="form-control input" value="">
-                            <input type="file" id="file-input" hidden>
+                <div class="second-row col-xl-12">
+                    <div class="row">
+                        <div class="group col-xl-7 col-lg-12">
+                            <div class="row">
+                                <div class="input-wrapper col-xl-9">
+                                    <label for="icon">Adding game icon</label>
+                                    <input type="text" id="icon" class="form-control input" value="">
+                                    <input type="file" id="file-input" hidden>
+                                </div>
+                                <div class="btn-wrapper col-xl-3">
+                                    <button class="btn button green-btn" id="file-uploader">Browse file</button>
+                                </div>
+                            </div>
                         </div>
-                        <button class="btn button green-btn" id="file-uploader">Browse file</button>
-                    </div>
-                    <div>
-                        <button class="btn button blue-btn">Add game</button>
+                        <div class="outer-btn-wrapper text-right col-xl-5 col-sm-12">
+                            <button class="btn button blue-btn">Add game</button>
+                        </div>
                     </div>
                 </div>
             </div>
