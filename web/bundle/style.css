@@ -566,6 +566,7 @@ pre code {
 }
 .row {
   display: flex;
+  flex: 1 0 100%;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
@@ -9931,6 +9932,25 @@ h3 {
   background-color: #e66060;
 }
 
+.white-btn {
+  border-radius: 6px;
+  border: 1px solid #d5d5d5;
+  background-color: #ffffff;
+  color: #3a3939;
+  font-family: "Encode-Sans";
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.26px;
+  padding: 12px 20px;
+  margin-right: 10px;
+}
+.white-btn i {
+  color: #07519b;
+  font-size: 17px;
+  letter-spacing: -0.34px;
+  margin-right: 5px;
+}
+
 .input {
   height: 43px;
   border-radius: 4px;
@@ -10297,6 +10317,53 @@ table tbody tr .blue {
   .main .body h3 {
     padding-left: 0;
   }
+}
+
+.nav-bar-wrapper {
+  margin-bottom: 15px;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  min-height: 55px;
+  display: flex;
+  padding: 0 20px;
+}
+.nav-bar-wrapper .nav-bar-item-wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.nav-bar-wrapper .nav-bar-item-wrapper .left-icon {
+  margin-right: 15px;
+  color: #c7d0d8;
+}
+.nav-bar-wrapper .nav-bar-item-wrapper .right-icon {
+  margin-left: 25px;
+  color: #c7d0d8;
+}
+.nav-bar-wrapper .nav-bar-item-wrapper .nav-bar-item {
+  color: #3a3939;
+  font-family: "Encode-Sans";
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.18px;
+  background-color: #ffffff;
+  padding-right: 20px;
+}
+.nav-bar-wrapper .nav-bar-item-wrapper:hover {
+  cursor: pointer;
+  background-color: #07519b;
+}
+.nav-bar-wrapper .nav-bar-item-wrapper:hover + .nav-bar-item-wrapper .nav-bar-item {
+  border-left: none;
+}
+.nav-bar-wrapper .nav-bar-item-wrapper:last-child:hover .nav-bar-item {
+  border: none;
+}
+.nav-bar-wrapper .nav-bar-item:not(:first-child) {
+  border-left: 1px solid #c7d0d8;
+}
+.nav-bar-wrapper .nav-bar-item:last-child {
+  border-right: 1px solid #c7d0d8;
 }
 
 .authorization {
@@ -10843,5 +10910,13 @@ table tbody tr .blue {
   .adding-game-bady .table-wrapper table {
     display: inline-table;
   }
+}
+
+.main-page-body {
+  padding: 0px 20px;
+}
+.main-page-body .btns-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map*/
