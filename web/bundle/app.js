@@ -11048,6 +11048,16 @@ $("#file-uploader").click(function () {
 });
 $("#file-input").change(function () {
   $("#icon")[0].value = $(this).val();
+}); // hide previus element border in nav-bar
+
+$(".nav-bar-item-wrapper").hover(function () {
+  $(this).prev().addClass("hide-border");
+}).mouseleave(function () {
+  $(this).prev().removeClass("hide-border");
+});
+$('.show-nested-table-btn').click(function () {
+  $("#" + $(this).val()).toggleClass('show-hide-table-row');
+  $(this).toggleClass('rotated');
 });
 
 /***/ })

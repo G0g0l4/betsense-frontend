@@ -15,11 +15,7 @@
         <div class="logo-wrapper">
             <a href="#" class="show">B</a>
             <a href="#" class="hide">Betsense <img src="./web/img/1-gray.png"></a>
-
-            <button class="close-sidebar-btn">
-                <div class="first-line"></div>
-                <div class="second-line"></div>
-            </button>
+            <a href="javascript:void(0)" class="close-sidebar-btn">X</a>
         </div>
         <div class="nav-wrapper">
             <a class="nav-item" href="#"> <i class="fa fa-file-text-o"></i> <span class="hide">Review</span> </a>
@@ -115,13 +111,306 @@
                 </div>
             </div>
 
-            <div class="nested-table-wrapper">
-                <div class="nested-table table">
+            <div class="nested-table-wrapper table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="btn-col"></th>
+                            <th scope="col">#</th>
+                            <th scope="col">Mouth</th>
+                            <th scope="col">Hands</th>
+                            <th scope="col">Users</th>
+                            <th scope="col">Bet</th>
+                            <th scope="col">Jackpot</th>
+                            <th scope="col">Profit</th>
+                            <th scope="col">Percent</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="odd">
+                            <td><button class="show-nested-table-btn" value="outer-table-1"><i
+                                        class="fas fa-chevron-right"></i></button></td>
+                            <td>1</td>
+                            <td>2018. 03. 31</td>
+                            <td>597</td>
+                            <td>5463.60</td>
+                            <td>0.00</td>
+                            <td>171.60</td>
+                            <td>3.17</td>
+                            <td>3.95</td>
+                        </tr>
+
+                        <tr class="hidden-table even" id="outer-table-1">
+                            <td colspan="9">
+                                <div class="nested-table table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr class="even">
+                                                <th scope="col" class="btn-col"></th>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Day</th>
+                                                <th scope="col">Hands</th>
+                                                <th scope="col">Users</th>
+                                                <th scope="col">Bet</th>
+                                                <th scope="col">Jackpot</th>
+                                                <th scope="col">Profit</th>
+                                                <th scope="col">Percent</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="odd">
+                                                <td><button class="show-nested-table-btn" value="inner-table-1"><i
+                                                            class="fas fa-chevron-right"></i></button></td>
+                                                <td>1</td>
+                                                <td>2018. 03. 31</td>
+                                                <td>597</td>
+                                                <td>5463.60</td>
+                                                <td>0.00</td>
+                                                <td>171.60</td>
+                                                <td>3.17</td>
+                                                <td>3.95</td>
+                                            </tr>
+
+                                            <tr class="hidden-table even" id="inner-table-1">
+                                                <td colspan="9">
+                                                    <div class="nested-table table-responsive">
+                                                        <table class="table table-bordered">
+                                                            <thead>
+                                                                <tr class="even">
+                                                                    <th scope="col">#</th>
+                                                                    <th scope="col">User ID</th>
+                                                                    <th scope="col">Name</th>
+                                                                    <th scope="col">Hands</th>
+                                                                    <th scope="col">Bet</th>
+                                                                    <th scope="col">Jackpot</th>
+                                                                    <th scope="col">Profit</th>
+                                                                    <th scope="col">Percent</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="odd">
+                                                                    <td>1</td>
+                                                                    <td>2018. 03. 31</td>
+                                                                    <td>pavle.m</td>
+                                                                    <td>597</td>
+                                                                    <td>0.00</td>
+                                                                    <td>171.60</td>
+                                                                    <td>3.17</td>
+                                                                    <td>3.95</td>
+                                                                </tr>
+                                                                <tr class="even">
+                                                                    <td>1</td>
+                                                                    <td>2018. 03. 31</td>
+                                                                    <td>xristefore</td>
+                                                                    <td>597</td>
+                                                                    <td>0.00</td>
+                                                                    <td>171.60</td>
+                                                                    <td>3.17</td>
+                                                                    <td>3.95</td>
+                                                                </tr>
+                                                                <tr class="odd">
+                                                                    <td>1</td>
+                                                                    <td>2018. 03. 31</td>
+                                                                    <td>mamukas</td>
+                                                                    <td>597</td>
+                                                                    <td>0.00</td>
+                                                                    <td>171.60</td>
+                                                                    <td>3.17</td>
+                                                                    <td>3.95</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <div class="amount-wrapper">
+                                                            <p>9.5678.78 GEL</p>
+                                                            <p>0.00 GEL</p>
+                                                            <p>135.14 GEL</p>
+                                                            <p>7.45</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="even">
+                                                <td><button class="show-nested-table-btn" value="inner-table-2"><i
+                                                            class="fas fa-chevron-right"></i></button></td>
+                                                <td>1</td>
+                                                <td>2018. 03. 31</td>
+                                                <td>597</td>
+                                                <td>5463.60</td>
+                                                <td>0.00</td>
+                                                <td>171.60</td>
+                                                <td>3.17</td>
+                                                <td>3.95</td>
+                                            </tr>
+
+                                            <tr class="hidden-table even" id="inner-table-2">
+                                                <td colspan="9">
+                                                    <div class="nested-table table-responsive">
+                                                        <table class="table table-bordered">
+                                                            <thead>
+                                                                <tr class="even">
+                                                                    <th scope="col">#</th>
+                                                                    <th scope="col">User ID</th>
+                                                                    <th scope="col">Name</th>
+                                                                    <th scope="col">Hands</th>
+                                                                    <th scope="col">Bet</th>
+                                                                    <th scope="col">Jackpot</th>
+                                                                    <th scope="col">Profit</th>
+                                                                    <th scope="col">Percent</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="odd">
+                                                                    <td>1</td>
+                                                                    <td>2018. 03. 31</td>
+                                                                    <td>pavle.m</td>
+                                                                    <td>597</td>
+                                                                    <td>0.00</td>
+                                                                    <td>171.60</td>
+                                                                    <td>3.17</td>
+                                                                    <td>3.95</td>
+                                                                </tr>
+                                                                <tr class="even">
+                                                                    <td>1</td>
+                                                                    <td>2018. 03. 31</td>
+                                                                    <td>xristefore</td>
+                                                                    <td>597</td>
+                                                                    <td>0.00</td>
+                                                                    <td>171.60</td>
+                                                                    <td>3.17</td>
+                                                                    <td>3.95</td>
+                                                                </tr>
+                                                                <tr class="odd">
+                                                                    <td>1</td>
+                                                                    <td>2018. 03. 31</td>
+                                                                    <td>mamukas</td>
+                                                                    <td>597</td>
+                                                                    <td>0.00</td>
+                                                                    <td>171.60</td>
+                                                                    <td>3.17</td>
+                                                                    <td>3.95</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <div class="amount-wrapper">
+                                                            <p>9.5678.78 GEL</p>
+                                                            <p>0.00 GEL</p>
+                                                            <p>135.14 GEL</p>
+                                                            <p>7.45</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
 
 
-                </div>
+                                            <tr class="odd">
+                                                <td><button class="show-nested-table-btn" value="inner-table-3"><i
+                                                            class="fas fa-chevron-right"></i></button></td>
+                                                <td>1</td>
+                                                <td>2018. 03. 31</td>
+                                                <td>597</td>
+                                                <td>5463.60</td>
+                                                <td>0.00</td>
+                                                <td>171.60</td>
+                                                <td>3.17</td>
+                                                <td>3.95</td>
+                                            </tr>
+
+                                            <tr class="hidden-table even" id="inner-table-3">
+                                                <td colspan="9">
+                                                    <div class="nested-table table-responsive">
+                                                        <table class="table table-bordered">
+                                                            <thead>
+                                                                <tr class="even">
+                                                                    <th scope="col">#</th>
+                                                                    <th scope="col">User ID</th>
+                                                                    <th scope="col">Name</th>
+                                                                    <th scope="col">Hands</th>
+                                                                    <th scope="col">Bet</th>
+                                                                    <th scope="col">Jackpot</th>
+                                                                    <th scope="col">Profit</th>
+                                                                    <th scope="col">Percent</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="odd">
+                                                                    <td>1</td>
+                                                                    <td>2018. 03. 31</td>
+                                                                    <td>pavle.m</td>
+                                                                    <td>597</td>
+                                                                    <td>0.00</td>
+                                                                    <td>171.60</td>
+                                                                    <td>3.17</td>
+                                                                    <td>3.95</td>
+                                                                </tr>
+                                                                <tr class="even">
+                                                                    <td>1</td>
+                                                                    <td>2018. 03. 31</td>
+                                                                    <td>xristefore</td>
+                                                                    <td>597</td>
+                                                                    <td>0.00</td>
+                                                                    <td>171.60</td>
+                                                                    <td>3.17</td>
+                                                                    <td>3.95</td>
+                                                                </tr>
+                                                                <tr class="odd">
+                                                                    <td>1</td>
+                                                                    <td>2018. 03. 31</td>
+                                                                    <td>mamukas</td>
+                                                                    <td>597</td>
+                                                                    <td>0.00</td>
+                                                                    <td>171.60</td>
+                                                                    <td>3.17</td>
+                                                                    <td>3.95</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+
+                                                        <div class="amount-wrapper">
+                                                            <p>9.5678.78 GEL</p>
+                                                            <p>0.00 GEL</p>
+                                                            <p>135.14 GEL</p>
+                                                            <p>7.45</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="even">
+                            <td><button class="show-nested-table-btn" value="outer-table-2"><i
+                                        class="fas fa-chevron-right"></i></button></td>
+                            <td>2</td>
+                            <td>2018. 03. 31</td>
+                            <td>597</td>
+                            <td>5463.60</td>
+                            <td>0.00</td>
+                            <td>171.60</td>
+                            <td>3.17</td>
+                            <td>3.95</td>
+                        </tr>
+                        <tr class="odd">
+                            <td><button class="show-nested-table-btn" value="outer-table-3"><i
+                                        class="fas fa-chevron-right"></i></button></td>
+                            <td>3</td>
+                            <td>2018. 03. 31</td>
+                            <td>597</td>
+                            <td>5463.60</td>
+                            <td>0.00</td>
+                            <td>171.60</td>
+                            <td>3.17</td>
+                            <td>3.95</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
+    </div>
     </div>
     </div>
     <script src="web/bundle/app.js"></script>
