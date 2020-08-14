@@ -55,8 +55,22 @@ function shrinkNavItem() {
 
 $(".dropdwon-nav-item").click(function () {
   $(".dp").toggleClass("show-dropdown");
+  $("#hide-botton-line").toggleClass("hide");
   $("i").toggleClass("rotated");
 });
+
+$(".nav-item")
+  .hover(function () {
+    $(this).addClass("hide-bottom-line");
+    $(this).prev().addClass("hide-bottom-line");
+    $(this).prev(".nav-item").addClass("hide-bottom-line");
+    $(this).next(".dp").addClass("hide-bottom-line");
+  })
+  .mouseleave(function () {
+    $(this).removeClass("hide-bottom-line");
+    $(this).prev().removeClass("hide-bottom-line");
+    $(this).next(".dp").removeClass("hide-bottom-line");
+  });
 
 $("#file-uploader").click(function () {
   $("#file-input").click();
@@ -76,9 +90,7 @@ $(".nav-bar-item-wrapper")
     $(this).prev().removeClass("hide-border");
   });
 
-
-
-  $('.show-nested-table-btn').click(function() {
-    $(`#${$(this).val()}`).toggleClass('show-hide-table-row');
-    $(this).toggleClass('rotated');
-  }) 
+$(".show-nested-table-btn").click(function () {
+  $(`#${$(this).val()}`).toggleClass("show-hide-table-row");
+  $(this).toggleClass("rotated");
+});

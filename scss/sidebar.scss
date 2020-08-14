@@ -21,13 +21,39 @@
     @include media-breakpoint-down(sm) {
       & {
         width: 100vw;
-        // height: 100vh;
       }
     }
   }
 
   a:hover {
     text-decoration: none;
+  }
+
+  .user {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    display: none;
+
+    i {
+      color: #3498f1;
+      letter-spacing: -0.32px;
+    }
+    span {
+      margin-left: 8px;
+      margin-right: 8px;
+      color: #ffffff;
+      font-family: "Encode-Sans";
+      font-size: 17px;
+      font-weight: 500;
+      letter-spacing: 0.58px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      & {
+        display: block;
+      }
+    }
   }
 
   .logo-wrapper {
@@ -88,7 +114,7 @@
           font-family: "Encode-Sans";
 
           img {
-            height: 100%;
+            height: auto;
           }
         }
 
@@ -101,21 +127,30 @@
           color: #abbdbd;
           letter-spacing: -0.32px;
         }
+
+        .bottom-line {
+          width: 100%;
+          height: 1px;
+          background: $gray;
+        }
       }
       .expanded-nav-item {
         width: 100%;
         display: flex;
         align-items: center;
-        padding-left: 4px;
-        justify-content: flex-start;
+        flex-direction: column;
+        padding: 0 10px;
+        min-height: 54px;
+        justify-content: space-between;
+        padding-top: 15px;
 
         &:hover {
           background-color: #132646;
         }
 
         .link {
-          margin: 0 15px;
           justify-content: flex-start;
+          padding: 0 4px;
         }
 
         i,
@@ -153,7 +188,6 @@
       .dp {
         display: none;
         width: 100%;
-        margin-bottom: 15px;
 
         &.show-dropdown {
           display: flex;
@@ -179,6 +213,27 @@
                 letter-spacing: -0.28px;
               }
             }
+          }
+        }
+        .bottom-line-wrapper {
+          width: 100%;
+          padding: 0 10px;
+
+          .bottom-line {
+            height: 1px;
+            width: 100%;
+            background: $gray;
+            padding: 0 10px;
+          }
+        }
+      }
+      .hide-bottom-line {
+        .bottom-line {
+          background-color: transparent;
+        }
+        .bottom-line-wrapper {
+          .bottom-line {
+            background-color: transparent;
           }
         }
       }
