@@ -67,4 +67,37 @@
       }
     }
   }
+  @include media-breakpoint-down(md) {
+    & {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
+
+      .nav-bar-item-wrapper {
+        padding-left: 0;
+        width: 100%;
+        justify-content: center;
+
+        .nav-bar-item {
+          max-width: 50%;
+          min-width: 245px;
+          padding: 20px;
+          border-right-color: transparent;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    & {
+      .nav-bar-item-wrapper {
+        .nav-bar-item {
+          width: 100%;
+          max-width: 100%;
+          min-width: 100%;
+        }
+      }
+    }
+  }
 }

@@ -10450,6 +10450,33 @@ table tbody tr .blue {
 .nav-bar-wrapper .nav-bar-item-wrapper.hide-border .nav-bar-item {
   border-right-color: #ffffff;
 }
+@media (max-width: 991.98px) {
+  .nav-bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .nav-bar-wrapper .nav-bar-item-wrapper {
+    padding-left: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .nav-bar-wrapper .nav-bar-item-wrapper .nav-bar-item {
+    max-width: 50%;
+    min-width: 245px;
+    padding: 20px;
+    border-right-color: transparent;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 767.98px) {
+  .nav-bar-wrapper .nav-bar-item-wrapper .nav-bar-item {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
 
 .authorization {
   height: 100vh;
