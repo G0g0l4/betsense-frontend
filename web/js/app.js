@@ -94,3 +94,19 @@ $(".show-nested-table-btn").click(function () {
   $(`#${$(this).val()}`).toggleClass("show-hide-table-row");
   $(this).toggleClass("rotated");
 });
+
+// custom select
+
+$(document).ready(function () {
+  $(".default-option").click(function () {
+    $(this).parent().toggleClass("active");
+    $('.rotate').toggleClass('rotated');
+  });
+
+  $(".select-ul li").click(function () {
+    let current = $(this).html();
+    $(".default-option li").html(current);
+    $(this).parents(".custom-select-wrapper").removeClass("active");
+    $('.rotate').removeClass('rotated');
+  });
+});
